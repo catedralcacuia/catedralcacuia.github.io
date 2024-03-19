@@ -16,6 +16,17 @@
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <!-- Bootstrap CSS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap JavaScript Bundle with Popper -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap CSS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap JavaScript Bundle with Popper -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -27,7 +38,7 @@
                 <li class="sidebar-nav-item"><a href="#about">Sobre nós</a></li>
                 <li class="sidebar-nav-item"><a href="#valores">Valores</a></li>
                 <li class="sidebar-nav-item"><a href="#portfolio">Trabalhos</a></li>
-                <li class="sidebar-nav-item"><a href="#contact">Contato</a></li>
+                <li class="sidebar-nav-item"><a href="#contact">Localização</a></li>
             </ul>
         </nav>
         <!-- Header-->
@@ -59,6 +70,7 @@
                 </div>
             </div>
         </section>
+
         <!-- Valores-->
         <section class="content-section bg-primary text-white text-center" id="valores">
             <div class="container px-4 px-lg-5">
@@ -124,44 +136,50 @@
                         <a class="portfolio-item" href="#!">
                             <div class="caption">
                                 <div class="caption-content">
-                                    <div class="h2">Cong Miss. Leopoldina</div>
-                                    <p class="mb-0">Congregaçao situada em Leopoldina</p>
+                                    <div class="h2">AME </div>
+                                    <p class="mb-0">PROJETO AME</p>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="assets/img/semadec21.jpeg" alt="..." />
+                            <img class="img-fluid" src="assets/img/ame.png" alt="..." />
                         </a>
                     </div>
                     <div class="col-lg-6">
                         <a class="portfolio-item" href="#!">
                             <div class="caption">
                                 <div class="caption-content">
-                                    <div class="h2">Ice Cream</div>
-                                    <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
+                                    <div class="h2">Bazar Social</div>
+                                    <p class="mb-0">Temos roupas e calçados em bom estado</p>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="assets/img/semadec212.jpeg" alt="..." />
+                            <img class="img-fluid" src="assets/img/bazar.png" alt="..." />
                         </a>
                     </div>
                     <div class="col-lg-6">
                         <a class="portfolio-item" href="#!">
                             <div class="caption">
                                 <div class="caption-content">
-                                    <div class="h2">Strawberries</div>
-                                    <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>
+                                    <div class="h2">Igrejas Missionárias</div>
+                                    <p class="mb-0">Temos nos comprometido a estar em lugares remotos para apregoar as Boas Novas do Reino de Deus</p>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="assets/img/semadec212.jpeg" alt="..." />
+                            <img class="img-fluid" src="assets/img/semadec_missoes.png" alt="..." />
                         </a>
                     </div>
                     <div class="col-lg-6">
                         <a class="portfolio-item" href="#!">
                             <div class="caption">
                                 <div class="caption-content">
-                                    <div class="h2">Workspace</div>
-                                    <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
+                                    <div class="h2">Vem Almoçar com Cristo</div>
+                                    <p class="mb-0">Programa de oração e palavras as 12h nas redes sociais
+                                    
+                                    </p>
+                                    <!-- <p class="mb-0">
+                                        <a class="social-link rounded-circle text-white mr-3" target="_blank" href="https://www.facebook.com/catedralcacuia">
+                                            <i class="icon-social-facebook"></i></a> 
+                                    </p> -->
                                 </div>
                             </div>
-                            <img class="img-fluid" src="assets/img/semadec21.jpeg" alt="..." />
+                            <img class="img-fluid" src="assets/img/vemalmocar.png" alt="..." />
                         </a>
                     </div>
                 </div>
@@ -170,9 +188,113 @@
         <!-- Call to Action-->
         <section class="content-section bg-primary text-white">
             <div class="container px-4 px-lg-5 text-center">
-                <h2 class="mb-4">Em construção...</h2>
-                <a class="btn btn-xl btn-light me-4" href="#!">Contato</a>
-                <a class="btn btn-xl btn-dark" href="#!">Voluntariar!</a>
+                <h2 class="mb-4">Gostaria de Contribuir? Veja como</h2>
+                <!-- <a class="btn btn-xl btn-light me-4" href="#!">Contato</a> -->
+                <!-- Início do Modal -->
+                <div class="modal fade" id="contatoModal" tabindex="-1" aria-labelledby="contatoModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="contatoModalLabel">Formulário de Contato</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                            <label for="nome" class="form-label">Nome:</label>
+                            <input type="text" class="form-control" id="nome" required>
+                            </div>
+                            <div class="mb-3">
+                            <label for="email" class="form-label">Email:</label>
+                            <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                            <label for="mensagem" class="form-label">Mensagem:</label>
+                            <textarea class="form-control" id="mensagem" rows="3" required></textarea>
+                            </div>
+                        </form>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary">Enviar</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- Fim do Modal -->
+                <a class="btn btn-xl btn-light me-4" href="#!" data-bs-toggle="modal" data-bs-target="#contatoModal">Contato</a>
+
+   <!-- Início do Modal -->
+<div class="modal fade" id="voluntariarModal" tabindex="-1" aria-labelledby="voluntariarModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+       <div class="modal-content">
+         <div class="modal-header">
+           <h5 class="modal-title" id="voluntariarModalLabel">Quero Ser Parceiro Nas Construções Missionária</h5>
+           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+         </div>
+         <div class="modal-body">
+            <form>
+                <label for="nome" class="form-label">Quero ajudar da seguinte forma:</label>
+                 <div class="mb-3">
+                   <label for="nome" class="form-label">Nome:</label>
+                   <input type="text" class="form-control" id="nome" required>
+                 </div>
+                 <div class="mb-3">
+                   <label for="email" class="form-label">Email:</label>
+                   <input type="email" class="form-control" id="email" required>
+                 </div>
+                 <div class="mb-3">
+                   <label for="opcoes" class="form-label">Opções:</label>
+                   <select class="form-select" id="opcoes" required>
+                     <option selected>Escolha uma opção</option>
+                     <option value="evangelismo">Evangelismo</option>
+                     <option value="entregaAlimentos">Entrega de Alimentos</option>
+                     <option value="entregaAlimentos">Doação</option>
+                     <option value="visitas">Visitas</option>
+                   </select>
+                 </div>
+            </form>         
+       
+         </div>
+         <div class="modal-footer">
+           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+           <button type="button" class="btn btn-primary">Enviar</button>
+         </div>
+       </div>
+    </div>
+   </div>
+   <!-- Fim do Modal -->
+   
+                <!-- <a class="btn btn-xl btn-dark" href="#!">Voluntariar!</a> -->
+                <a class="btn btn-xl btn-dark" href="#!" data-bs-toggle="modal" data-bs-target="#voluntariarModal">Voluntariar!</a>
+            <!-- Início do Modal -->
+            <div class="modal fade" id="parceiroModal" tabindex="-1" aria-labelledby="parceiroModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="parceiroModalLabel">Quero Ser Parceiro Nas Construções Missionária</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+
+                        <p class="text-center">
+                        
+                            <label for="nome" class="form-label">Quero ser parceiro missionário mensal</label>
+                            <img src="assets/img/qrcode-pix.png" alt="QR Code para Pix" style="max-width: 100%;">
+                            <label for="nome" class="form-label">Chave PIX: assembleia.cgadc@gmail.com</label>
+                            </p>
+
+
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Enviar</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!-- Fim do Modal -->
+            <a class="btn btn-xl btn-light" href="#!" data-bs-toggle="modal" data-bs-target="#parceiroModal">Ser parceiro missionário</a>
             </div>
         </section>
         <!-- Map-->
