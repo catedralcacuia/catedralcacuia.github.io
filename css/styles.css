@@ -10956,15 +10956,15 @@ html {
 .btn-xl {
   padding: 1.25rem 2.5rem;
 }
-
+/* 
 .callout {
   padding: 15rem 0;
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/bg-callout.jpg");
   /* background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/jubileu.jpg"); */
-  background-position: center center;
+  /* background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */ */
 .callout h2, .callout .h2 {
   font-size: 3.5rem;
   font-weight: 700;
@@ -11112,4 +11112,82 @@ footer.footer .social-link:hover {
 /* Estilos personalizados para labels no modal de contato */
 .modal-body label, p{
   color: #333; /* Altere para a cor desejada */
+}
+
+/* 
+
+
+.callout img{
+  mix-blend-mode:luminosity;
+} */
+.callout {
+  position: relative;
+  width: 100%;
+  height: 500px; /* Ajuste a altura conforme necessário */
+  overflow: hidden;
+ }
+ 
+ .slider {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+
+ }
+ 
+.slide {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ background-size: cover;
+ background-position: center;
+ animation: slide 5.5s infinite;
+}
+
+ 
+#slide-1 {
+  background-image: url('../assets/img/11.jpg');
+  animation-delay: 1s; /* Começa imediatamente */
+ }
+ 
+ #slide-2 {
+  background-image: url('../assets/img/01.jpg');
+  animation-delay: 1.5s; /* Começa após 0.5 segundos */
+ }
+ 
+ #slide-3 {
+  background-image: url('../assets/img/02.jpg');
+  animation-delay: 2s; /* Começa após 1 segundos */
+ }
+ 
+ #slide-4 {
+  background-image: url('../assets/img/03.jpg');
+  animation-delay: 2.5s; /* Começa após 1.5 segundos */
+ }
+ 
+ #slide-5 {
+  background-image: url('../assets/img/08.jpg');
+  animation-delay: 3s; /* Começa após 2 segundos */
+ }
+ 
+ #slide-6 {
+  background-image: url('../assets/img/07.jpg');
+  animation-delay: 3.5s; /* Começa após 2.5 segundos */
+ }
+ 
+ #slide-7 {
+  background-image: url('../assets/img/06.jpg');
+  animation-delay: 4s; /* Começa após 3 segundos */
+ }
+
+ @keyframes slide {
+  0% { opacity: 1; }
+  20% { opacity: 1; }
+  33% { opacity: 1; }
+  53% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+header{
+  color: #FFFAFA;
 }
