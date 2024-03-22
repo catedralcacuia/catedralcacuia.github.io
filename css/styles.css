@@ -7992,6 +7992,7 @@ textarea.form-control-lg {
 
 .text-center {
   text-align: center !important;
+  color:#000;
 }
 
 .text-decoration-none {
@@ -11191,3 +11192,25 @@ footer.footer .social-link:hover {
 header{
   color: #FFFAFA;
 }
+fieldset {
+  border: 1px solid #666; /* Adds a border around the fieldset */
+  padding: 10px; /* Adds some padding inside the fieldset */
+  background-color: #fff; /* Sets the background color to white */
+  margin-bottom: 1em; /* Adds some space below the fieldset */
+  
+}
+
+fieldset input {
+  size:36;
+  width: 46px;;
+
+}
+
+legend {
+  padding: 1px 10px; /* Adds some padding around the legend text */
+  float: none; /* Ensures the legend is not floated */
+  width: auto; /* Allows the legend to adjust its width based on content */
+  background-color: #fff; /* Sets the background color to white */
+  color:#0f5132
+}
+

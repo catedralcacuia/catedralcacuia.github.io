@@ -118,7 +118,7 @@
 
 
 
-        <!-- Callout-->
+        <!-- Galeria Banner-->
         <section class="callout">
             <div class="slider">                
                 <div class="slide" id="slide-1"></div>
@@ -129,12 +129,13 @@
                 <div class="slide" id="slide-6"></div>
                 <div class="slide" id="slide-7"></div>
             </div>
+
         </section>
         
 
 
 
-        <!-- <section class="callout">
+        <section class="callout">
             <div class="container px-4 px-lg-5 text-center">
                 <h2 class="mx-auto mb-5">
                     Bem vindo a 
@@ -143,7 +144,7 @@
                 </h2>
                 <a class="btn btn-primary btn-xl" href="#">Fale Conosco</a>
             </div>
-        </section> -->
+        </section>
 
 
 
@@ -211,7 +212,7 @@
 
 
 
-        <!-- Call to Action-->
+        <!-- Parceiros-->
         <section class="content-section bg-primary text-white">
             <div class="container px-4 px-lg-5 text-center">
                 <h2 class="mb-4">Gostaria de Contribuir? Veja como</h2>
@@ -226,24 +227,25 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                        <form>
+                        <form action="https://formsubmit.co/catedralcacuia.cgadc@gmail.com" method="POST">
                             <div class="mb-3">
                             <label for="nome" class="form-label">Nome:</label>
-                            <input type="text" class="form-control" id="nome" required>
+                            <input type="text" class="form-control" id="nome" name="nome" required>
                             </div>
                             <div class="mb-3">
                             <label for="email" class="form-label">Email:</label>
-                            <input type="email" class="form-control" id="email" required>
+                            <input type="email" class="form-control" id="email" name="email" required>
                             </div>
                             <div class="mb-3">
-                            <label for="mensagem" class="form-label">Mensagem:</label>
-                            <textarea class="form-control" id="mensagem" rows="3" required></textarea>
+                            <label for="contato" class="form-label">Mensagem:</label>
+                            <textarea class="form-control" id="contato" name="contato" rows="3" required></textarea>
                             </div>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
                         </form>
                         </div>
                         <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                        <button type="button" class="btn btn-primary">Enviar</button>
+                        
                         </div>
                     </div>
                     </div>
@@ -260,19 +262,19 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form>
+                        <form action="https://formsubmit.co/catedralcacuia.cgadc@gmail.com" method="POST">
                             <label for="nome" class="form-label">Quero ajudar da seguinte forma:</label>
                             <div class="mb-3">
                             <label for="nome" class="form-label">Nome:</label>
-                            <input type="text" class="form-control" id="nome" required>
+                            <input type="text" class="form-control" id="nome" name="nome" required required>
                             </div>
                             <div class="mb-3">
                             <label for="email" class="form-label">Email:</label>
-                            <input type="email" class="form-control" id="email" required>
+                            <input type="email" class="form-control" id="email" name="email" required>
                             </div>
                             <div class="mb-3">
-                            <label for="opcoes" class="form-label">Opções:</label>
-                            <select class="form-select" id="opcoes" required>
+                            <label for="contribuir" class="form-label">Opções:</label>
+                            <select class="form-select" id="contribuir" name="contribuir" required>
                                 <option selected>Escolha uma opção</option>
                                 <option value="evangelismo">Evangelismo</option>
                                 <option value="entregaAlimentos">Entrega de Alimentos</option>
@@ -280,12 +282,17 @@
                                 <option value="visitas">Visitas</option>
                             </select>
                             </div>
+                            <div class="mb-3">
+                                <label for="voluntariado" class="form-label">Mensagem</label>
+                                <input type="text" class="form-control" id="voluntariado" name="voluntariado">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
                         </form>         
                 
                     </div>
                     <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                    <button type="button" class="btn btn-primary">Enviar</button>
+                    
                     </div>
                 </div>
                 </div>
@@ -303,19 +310,90 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-
-                        <p class="text-center">
-                        
+                        <p class="text-center">                        
                             <label for="nome" class="form-label">Quero ser parceiro missionário mensal</label>
                             <img src="assets/img/qrcode-pix.png" alt="QR Code para Pix" style="max-width: 100%;">
                             <label for="nome" class="form-label">Chave PIX: assembleia.cgadc@gmail.com</label>
-                            </p>
-
-
+                        </p>
                     </div>
+                    <div class="modal-body">
+                        <form action="https://formsubmit.co/catedralcacuia.cgadc@gmail.com" method="POST">
+                            <div class="mb-3">
+                            <label for="nome" class="form-label">Nome:</label>
+                            <input type="text" class="form-control" id="nome" name="nome" required>
+                            </div>
+                            <div class="mb-3">
+                            <label for="email" class="form-label">Email:</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="mb-3">
+                            <label for="contato" class="form-label">Mensagem:</label>
+                            <textarea class="form-control" id="contato" name="contato" rows="3" required></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <fieldset for="parcelas" class="form-label">
+                                <legend  for="parcelas" class="form-label">Selecione as Parcelas:</legend>                                   
+                                <label for="parcela1" class="form-label">
+                                <input type="checkbox"  id="parcela1" name="parcela1" value="1">
+                                1
+                                </label>                        
+                                <label for="parcela2" class="form-label">
+                                <input type="checkbox"   id="parcela2" name="parcela2" value="2">
+                                2
+                                </label>  
+                                <label for="parcela3" class="form-label">
+                                <input type="checkbox"  id="parcela3" name="parcela3" value="3">
+                                3
+                                </label>
+                            
+                                <label for="parcela4" class="form-label">
+                                    <input type="checkbox" id="parcela4" name="parcela4" value="4">
+                                    4
+                                </label>                        
+                                <label for="parcela5" class="form-label">
+                                <input type="checkbox"  id="parcela5" name="parcela5" value="5">
+                                5
+                                </label>  
+                                <label for="parcela6" class="form-label">
+                                <input type="checkbox"  id="parcela6" name="parcela6" value="6">
+                                6
+                                </label>  
+                                    
+                                <label for="parcela7" class="form-label">
+                                <input type="checkbox" id="parcela7" name="parcela7" value="7">
+                                7
+                                </label>                        
+                                <label for="parcela8" class="form-label">
+                                <input type="checkbox"  id="parcela8" name="parcela8" value="8">
+                                8
+                                </label>  
+                                <label for="parcela9" class="form-label">
+                                <input type="checkbox"  id="parcela9" name="parcela9" value="9">
+                                9
+                                </label>
+                                
+                                <label for="parcela10" class="form-label">
+                                <input type="checkbox" id="parcela10" name="parcela10" value="10">
+                                10
+                                </label>                        
+                                <label for="parcela11" class="form-label">
+                                <input type="checkbox"  id="parcela11" name="parcela11" value="11">
+                                11
+                                </label>  
+                                <label for="parcela12" class="form-label">
+                                <input type="checkbox"  id="parcela12" name="parcela12" value="12">
+                                12
+                                </label>  
+                            </fieldset>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </form>
+                    </div>
+                    
+                    
                     <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                    <button type="button" class="btn btn-primary">Enviar</button>
+                    
                     </div>
                 </div>
                 </div>
@@ -353,6 +431,8 @@
                     <p>Quinta - <strong> Círculo da Oração </strong> - <em>14:00h a 17:00h</em></p>
                     <p>Quinta - <strong> Culto </strong> - <em>19:00h a 21:00h</em></p>
                     <p>Sábado - <strong> Consagração </strong> - <em>09:00h a 11:00h</em></p>
+                    <p>Domingo - <strong> EBD </strong> - <em>9:00h a 11:00h</em></p>
+                    <p>Domingo - <strong> Evangelismo </strong> - <em>16:00h a 17:30h</em></p>
                     <p>Domingo - <strong> Culto </strong> - <em>19:00h a 21:00h</em></p>
                 
                 </div>
